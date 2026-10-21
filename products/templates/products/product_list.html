@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block title %}Products{% endblock %}
+{% block content %}
+<h1>Products</h1>
+<p>This page is rendered from the app-level templates folder.</p>
+<ul>
+    {% for product in products %}<li>{{ product }}</li>{% endfor %}
+</ul>
+{% endblock %}
